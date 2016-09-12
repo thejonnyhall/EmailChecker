@@ -15,5 +15,5 @@ return-url = 'http://localhost:8080'
 
 authentication = linkedin.LinkedInAuthentication(Consumer-key, consumer-secret, return-url, linkedin.PERMISSIONS.enums.values())
 
-test = application.get_profile()
-print test
+print authentication.authorization_url  # open this url on your browser
+application = linkedin.LinkedInApplication(authentication)
