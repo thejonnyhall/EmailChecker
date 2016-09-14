@@ -2,8 +2,6 @@
 # Only-Code-In-Kebab-Case
 # Jonny and Xander 2016
 
-from linkedin import linkedin
-from oauthlib import *
 from Tkinter import *
 
 mainPage = Tk()
@@ -24,21 +22,7 @@ textstuff = Entry(mainPage)
 textstuff.pack()
 
 
-# Adam's Emails
-# hibblea@qut.edu.au
-# adam.hibble@connect.qut.edu.au
 
-
-# Testing API stuff
-consumerKey = '75kkkkhud4u9fj'
-consumerSecret = '68qABdIFaAXYRYLS'
-ReturnUrl = 'http://localhost:8080'
-
-
-authentication = linkedin.LinkedInAuthentication(consumerKey, consumerSecret, ReturnUrl, linkedin.PERMISSIONS.enums.values())
-
-# print authentication.authorization_url 
-application = linkedin.LinkedInApplication(authentication)
 
 
 mainPage.mainloop()
